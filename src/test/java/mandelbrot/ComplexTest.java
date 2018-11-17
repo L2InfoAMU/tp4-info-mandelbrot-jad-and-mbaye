@@ -152,4 +152,13 @@ public class ComplexTest {
         Complex c1 = new Complex(real, imaginary);
         assertEquals(Complex.ZERO, c1.subtract(c1));
     }
+
+    @Test
+    void testComplexMultiply(){
+        Complex c1 = new Complex(2, 2);
+        assertEquals(0, c1.multiply(c1).getReal());
+        assertEquals(8, c1.multiply(c1).getImaginary());
+    }
+
+
 }

@@ -160,5 +160,13 @@ public class ComplexTest {
         assertEquals(8, c1.multiply(c1).getImaginary());
     }
 
+    @Test
+    void testsquaredModulus(){
+        Complex c0 = new Complex(real, imaginary);
+        double c1 = (real*real) + (imaginary*imaginary);
+        assertEquals(c1, c0.squaredModulus());
+
+    }
+
 
 }

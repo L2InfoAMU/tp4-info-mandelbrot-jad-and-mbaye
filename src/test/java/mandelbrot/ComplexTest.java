@@ -146,4 +146,10 @@ public class ComplexTest {
         assertEquals(-24, c1.add(c1).getReal());
         assertEquals(10, c1.add(c1).getImaginary());
     }
+
+    @Test
+    void testComplexSubtract(){
+        Complex c1 = new Complex(real, imaginary);
+        assertEquals(Complex.ZERO, c1.subtract(c1));
+    }
 }

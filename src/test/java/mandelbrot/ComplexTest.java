@@ -175,5 +175,13 @@ public class ComplexTest {
         assertEquals(-597, c1.pow(5).getImaginary());
     }
 
+    @Test
+    void testScale(){
+        Complex c1 = new Complex(real, imaginary);
+        double lamda = 2;
+        assertEquals(lamda*real, c1.scale(lamda).getReal());
+        assertEquals(lamda*imaginary, c1.scale(lamda).getImaginary());
+    }
+
 
 }

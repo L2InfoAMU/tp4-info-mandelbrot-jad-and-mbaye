@@ -161,11 +161,18 @@ public class ComplexTest {
     }
 
     @Test
-    void testsquaredModulus(){
+    void testSquaredModulus(){
         Complex c0 = new Complex(real, imaginary);
         double c1 = (real*real) + (imaginary*imaginary);
         assertEquals(c1, c0.squaredModulus());
 
+    }
+
+    @Test
+    void testPow(){
+        Complex c1 = new Complex(2,3);
+        assertEquals(122, c1.pow(5).getReal());
+        assertEquals(-597, c1.pow(5).getImaginary());
     }
 
 
